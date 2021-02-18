@@ -12,6 +12,9 @@ var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
 
+// Juliet: Add route to forum
+var forum = require('./routes/forum');
+
 var app = express();
 
 // all environments
@@ -37,6 +40,10 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
+
+// Juliet: Add route to forum
+app.get('/forum', forum.view);
+app.get('/forum/question', forum.question);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

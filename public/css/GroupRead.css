@@ -1,0 +1,101 @@
+.phone {
+  margin: 20px;
+  width: 414px;
+  height: 896px;
+  border: 5px solid #e4e4e4;
+}
+
+.back-button {
+  padding: 20px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #333333;
+  border: none;
+  background: none;
+}
+
+.new-question-button-div {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.new-question-button {
+  padding: 10px;
+  /* need font here */
+  font-size: 25px;
+  line-height: 30px;
+  border-radius: 10px;
+  border: none;
+  background: #c4c4c4;
+}
+
+.forum_card {
+  width: 350px;
+  height: 110px;
+  margin-top: 35px;
+  margin-left: 27px;
+  padding: 15px;
+  /* need font here */
+  border:none;
+  background: #e4e4e4;
+  border-radius: 8px;
+}
+
+.forum_card_title {
+  margin: 5px;
+  font-size: 18px;
+  line-height: 22px;
+  float: left;
+}
+
+.forum_card_class {
+  padding: 5px 15px;
+  font-size: 20px;
+  line-height: 24px;
+  height: 35px;
+  margin-top: 15px;
+  background: #c4c4c4;
+  border-radius: 9px;
+  float: left;
+}
+
+.forum_card_op {
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 18px;
+  float: right;
+}
+
+.question_page {
+  width: 350px;
+  margin-left: 27px;
+}
+
+.enter-question {
+  height: 220px;
+  margin-bottom: 30px;
+  /* need font here */
+  font-size: 25px;
+  line-height: 30px;
+  border: 2px solid #000000;
+}
+
+.question_options {
+  /* need font here */
+  font-size: 25px;
+  line-height: 30px;
+  border-top: 1px solid #000000;
+}
+
+.option_button {
+  float: right;
+  font-size: 20px;
+  border: none;
+  background: none;
+}
+
+.question_selected {
+  /* need font here */
+  font-size:20px;
+  color:#8f8f8f;
+}
