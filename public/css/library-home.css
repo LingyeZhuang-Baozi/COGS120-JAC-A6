@@ -64,6 +64,14 @@
 	margin-left: 330px;
 	margin-top: 23px;
 }
+.word-content{
+	width:388px;
+	height:642px;
+	margin-left: 15px;
+	margin-top: 32px;
+	font-size: 25px;
+	line-height: 30px;
+}
 .column{
 	float: left;
 	width:50%;
