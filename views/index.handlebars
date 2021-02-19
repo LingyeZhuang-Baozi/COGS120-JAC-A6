@@ -9,14 +9,22 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.css" rel="stylesheet">
 	<link href="css/GroupRead.css" rel="stylesheet">
+	<link href="/css/library-home.css" rel="stylesheet">
 	<!-- /Added -->
 
 </head>
 
 <body>
 <div class="phone">
-Begin here (or replace this with any static code already written).
-</div>
+	<div class = "row">
+			{{#each classname}}
+			<div class="column">
+				<button onclick="window.location.href='/library'"class = "class-card"><div>
+				<p class="class-card.cont">{{class}}</p>
+			</div></button>
+			</div>
+			{{/each}}
+		</div>
 		<nav class="navigationbar">
 			<ul class="mobile-nav">
 				<li><a href="/">Library</a></li>
@@ -24,5 +32,8 @@ Begin here (or replace this with any static code already written).
 				<li><a href="/forum">Forum</a></li>
 			</ul>
 		</nav>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
 </body>
 </html>
+
