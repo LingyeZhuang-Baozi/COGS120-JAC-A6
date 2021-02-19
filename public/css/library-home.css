@@ -1,0 +1,83 @@
+.phone {
+  margin: 20px;
+  width: 414px;
+  height: 896px;
+  border: 5px solid #e4e4e4;
+}
+.class-card{
+	width: 165px;
+	height: 137px;
+	margin-left: 29px;
+	margin-top: 40px;
+	margin-right: 220px;
+}
+.class-card.cont{
+	width: 119px;
+	height: 30px;
+	margin-top: 138px;
+	margin-left: 44px;
+	font-size: 25px;
+	line-height: 30px;
+}
+.reading-card{
+	width:165px;
+	height:137px;
+	margin-left: 32px;
+	margin-top: 32px;
+}
+.reading-card.cont{
+	width:109px;
+	height:110px;
+	margin-left: 61px;
+	margin-top: 129px;
+	font-size:20px;
+	line-height:24;
+	text-align: center;
+}
+.class-header{
+	width:405px;
+	height: 79px;
+	border: 1px solid #000000;
+}
+.back-button{
+  width: 50px;
+  height: 50px;
+  margin-left: 16px;
+  margin-top: 5px;
+}
+.annotation-header{
+	width: 405px;
+	height:79px;
+	margin-left: 0px;
+	margin-top: 0px;
+	border: 1px solid #000000;
+}
+.highlight-ops{
+	width:123px;
+	height:30px;
+	margin-left: 145px;
+	margin-top: 26px;
+}
+.forum-icon{
+	width:43px;
+	height: 45px;
+	margin-left: 330px;
+	margin-top: 23px;
+}
+.column{
+	float: left;
+	width:50%;
+	padding: 0px;
+}
+/*clearing floats*/
+.row:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+/*making three columns stack on top of each other*/
+@media screen and (max-width:600px){
+	.column{
+		width:50%;
+	}
+}

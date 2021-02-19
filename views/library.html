@@ -1,0 +1,38 @@
+html>
+<head>
+	<title>ClassLibrary</title>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, intitial-scale=1.0">
+	<script src="./js/bootstrap.js"></script>
+	<link href="./bootstrap.min.css" rel="stylesheet">
+	<link href="./css/bootstrap.css" rel="stylesheet">
+	<link href="./css/bootstrap-theme.css" rel="stylesheet">
+	<link href="./css/library-home.css" rel="stylesheet">
+</head>
+<body>
+	<div class="phone">
+		<div class="class-header">
+			<p style = "font-size:25px;text-align:center;margin-top:25px;"> COGS 120</p>
+			<div class ="back-buttom">
+			<button onclick="goBack()"> <b> < </b> </button>
+			<script>
+			function goBack() {
+  			window.history.back();
+			}
+		</script> </div>
+		</div>
+		<div class="row"> 
+			{{#each readings}}
+			<div class="column">
+				<button class="reading-card"><div>
+				<p class="reading-card.cont">{{title}}<b><br>{{number}}</b></p>
+			</div></button>			
+			</div>
+			{{/each}}
+		</div>
+		
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+</body>
+</html>
