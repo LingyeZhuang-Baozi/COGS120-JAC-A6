@@ -2,10 +2,30 @@
 /*
  * Get forum page.
  */
-var forum_data = require('../JSON/class_data.json');
 exports.view = function(req, res){
-  console.log (forum_data);  // debug msg
-  res.render('forum', forum_data);
+  res.render('forum', {
+  	'questions': [
+  		{	'title': "What is the function of css?",
+  			'class': "COGS120",
+  			'op': "😊me"
+  		},
+  		{
+  			'title': "What is the affordance of a door?",
+  			'class': "DSGN 1",
+  			'op': "🎀oof"
+  		},
+  		{
+  			'title': "What is the function of css?",
+  			'class': "COGS 10",
+  			'op': "🐟bob"
+  		},
+  		{
+  			'title': "Can you list some examples of distri...",
+  			'class': "COGS 100",
+  			'op': "😊me"
+  		}
+  	]
+  });
 };
 
 /*

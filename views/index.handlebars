@@ -10,6 +10,8 @@
 	<link href="css/bootstrap-theme.css" rel="stylesheet">
 	<link href="css/GroupRead.css" rel="stylesheet">
 	<link href="/css/library-home.css" rel="stylesheet">
+	<link href="./css/navbar.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 	<!-- /Added -->
 
 </head>
@@ -25,13 +27,22 @@
 			</div>
 			{{/each}}
 		</div>
-		<nav class="navigationbar">
-			<ul class="mobile-nav">
-				<li><a href="/">Library</a></li>
-				<li><a href="/upload">Upload</a></li>
-				<li><a href="/forum">Forum</a></li>
-			</ul>
-		</nav>
+	<nav class = "navigationbar">
+		<a href="/" class = "nav_bar nav_bar--active">
+			<span class="material-icons">import_contacts</span>
+			<span class="navBar_text">Library</span>
+		</a>
+
+		<a href="/upload" class = "nav_bar">
+			<span class="material-icons">add</span>
+			<span class="navBar_text">Upload</span>
+		</a>
+
+		<a href="/forum" class = "nav_bar">
+			<span class="material-icons">forum</span>
+			<span class="navBar_text">Forum</span>
+		</a>
+	</nav>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 </body>
