@@ -1,31 +1,42 @@
-.phone {
+.phone {  /* abandoned */
   margin: 20px;
   width: 414px;
   height: 896px;
   border: 5px solid #e4e4e4;
 }
+
+/* easier responsive solution */
+.column {
+	margin: 0 40px;
+	column-count: 2;
+	column-gap: 40px;
+	text-align: center;
+}
+
 .class-card{
 	width: 165px;
 	height: 137px;
-	margin-left: 29px;
 	margin-top: 40px;
-	margin-right: 220px;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	text-align: center;
 }
-.class-card.cont{
+/*.class-card.cont{
 	width: 119px;
 	height: 30px;
 	margin-top: 138px;
 	margin-left: 44px;
 	font-size: 25px;
 	line-height: 30px;
-}
+}*/
+
 .reading-card{
 	width:165px;
 	height:137px;
-	margin-left: 32px;
 	margin-top: 32px;
+	text-align: center;
 }
-.reading-card.cont{
+/*.reading-card.cont{
 	width:109px;
 	height:110px;
 	margin-left: 61px;
@@ -33,24 +44,27 @@
 	font-size:20px;
 	line-height:24;
 	text-align: center;
+}*/
+.fixed_header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000000;
+	background-color: #FFFFFF;
 }
-.class-header{
-	width:405px;
-	height: 79px;
-	border: 1px solid #000000;
-}
-.back-button{
-  width: 50px;
-  height: 50px;
+.back-button {
+  padding: 20px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #333333;
+  border: none;
+  background: none;
   margin-left: 16px;
-  margin-top: 5px;
-}
-.annotation-header{
-	width: 405px;
-	height:79px;
-	margin-left: 0px;
-	margin-top: 0px;
-	border: 1px solid #000000;
+  margin-top: 16px;
+  float: left;
 }
 .highlight-ops{
 	width:123px;
@@ -65,27 +79,25 @@
 	margin-top: 23px;
 }
 .word-content{
-	width:388px;
-	height:642px;
-	margin-left: 15px;
-	margin-top: 32px;
+	margin: 32px 15px;
 	font-size: 25px;
 	line-height: 30px;
 }
-.column{
+
+/*.column{
 	float: left;
-	width:50%;
-	padding: 0px;
+	width: 50%;
+	text-align: center;
 }
-/*clearing floats*/
+//clearing floats
 .row:after{
 	content:"";
 	display:table;
 	clear:both;
 }
-/*making three columns stack on top of each other*/
+//making three columns stack on top of each other
 @media screen and (max-width:600px){
 	.column{
 		width:50%;
 	}
-}
+}*/

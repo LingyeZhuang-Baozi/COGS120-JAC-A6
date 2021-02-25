@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>GroupReads</title>
+	<title>Upload</title>
 
 	<!-- Added -->
 	<meta charset="utf-8">
@@ -13,27 +13,30 @@
 	<link href="css/navbar.css" rel="stylesheet">
 	<link href="css/upload.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
 	<!-- /Added -->
 
 </head>
 
 <body>
-<div>
-	<div class="column">
-		{{#each classname}}
-		<div><button onclick="window.location.href='/library'"class = "class-card"><div>
-			<p>{{class}}</p>
-		</div></button></div>
-		{{/each}}
+	<div>
+		<div class="upload_reading_text">
+			<h3>Upload Reading</h3>
+		</div>
+		<div class="upload_box">
+			<div><button class="upload_method">Upload Method</button></div>
+			<div><button class="class_selection">Class</button></div>
+			<div><button class="upload_button">Upload</button></div>
+		</div>
 	</div>
-
+	
 	<nav class = "navigationbar">
-		<a href="/" class = "nav_bar nav_bar--active">
+		<a href="/" class = "nav_bar">
 			<span class="material-icons">import_contacts</span>
 			<span class="navBar_text">Library</span>
 		</a>
 
-		<a href="/upload" class = "nav_bar">
+		<a href="/upload" class = "nav_bar nav_bar--active">
 			<span class="material-icons">add</span>
 			<span class="navBar_text">Upload</span>
 		</a>
@@ -43,9 +46,5 @@
 			<span class="navBar_text">Forum</span>
 		</a>
 	</nav>
-</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://code.jquery.com/jquery.js"></script>
 </body>
 </html>
-

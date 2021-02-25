@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewpoint" content="width=device-width, intitial-scale=1.0">
 	<script src="js/bootstrap.js"></script>
-	<!--<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/bootstrap-theme.css" rel="stylesheet">-->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
 	<link href="css/forum.css" rel="stylesheet">
 	<link href="css/library-home.css" rel="stylesheet">
 	<link href="css/navbar.css" rel="stylesheet">
@@ -20,15 +20,13 @@
 			<button onclick="window.location.href='forum/question'" class="new-question-button">New Question</button>
 		</div>
 		
-		<div style="text-align:center;">
-			{{#each questions}}
-			<button class="forum_card"><div>
-				<p class="forum_card_title">{{title}}</p>
-				<div class="forum_card_class">{{class}}</div>
-				<p class="forum_card_op">by {{op}}</p>
-			</div></button>
-			{{/each}}
-		</div>
+		{{#each questions}}
+		<button class="forum_card"><div>
+			<p class="forum_card_title">{{title}}</p>
+			<div class="forum_card_class">{{class}}</div>
+			<p class="forum_card_op">by {{op}}</p>
+		</div></button>
+		{{/each}}
 	</div>
 		
 		<nav class = "navigationbar">
