@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Login</title>
+
+	<!-- Added -->
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, intitial-scale=1.0">
+	<script src="js/bootstrap.js"></script>
+	<!--<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">-->
+	<link href="css/forum.css" rel="stylesheet">
+	<link href="css/library-home.css" rel="stylesheet">
+	<link href="css/navbar.css" rel="stylesheet">
+	<link href="css/upload.css" rel="stylesheet">
+	<link href="css/login-register.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+	<!-- /Added -->
+
+</head>
+
+<body>
+	<div class="center">
+		<h1 class="head_text">
+			GroupReads
+		</h1>
+		<form id="registerationForm" method="get" action="/">
+		    <div class="box">
+		      <div class="label_text"><label for="email">email<br></label></div>
+		      <input type="text" id="email" name="email" class="input_box" required>
+		    </div>
+		    <div class="box">
+		      <label for="password" class="label_text">password<br></label>
+		      <input type="password" id="password" name="password" class="input_box" required>
+		    </div>
+		    <div class="box">
+		      <p style="float:left;">
+		    	<input type="checkbox" id="remember" name="remember_me">
+		    	<label for="remember">Remember me<br></label>
+		      </p>
+		      <p style="float:right;"><a>Forget Password?</a></p>
+		    </div>
+			<input type="submit" id="submitBtn" class="login_button" value="Login"></input>
+		</form>
+		<div class="bottom_text"><p>New to GroupReads? <a href="/register"><b>Start Here</b></a></p></div>
+	</div>
+</body>
+</html>
