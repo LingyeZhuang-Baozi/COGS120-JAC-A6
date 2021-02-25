@@ -19,6 +19,8 @@
 	margin-top: 40px;
 	/*margin-left: auto;
 	margin-right: auto;*/
+	background: #e4e4e4;
+	border-radius: 8px;
 	text-align: center;
 }
 /*.class-card.cont{
@@ -34,6 +36,8 @@
 	width:165px;
 	height:137px;
 	margin-top: 32px;
+	background: #e4e4e4;
+	border-radius: 8px;
 	text-align: center;
 }
 /*.reading-card.cont{
