@@ -17,6 +17,7 @@ var forum = require('./routes/forum');
 var upload = require('./routes/upload');
 var library = require('./routes/library');
 var read = require('./routes/read');
+var login = require('./routes/login');
 
 var app = express();
 
@@ -43,13 +44,13 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
-
-// Juliet: Add route to forum
 app.get('/forum', forum.view);
 app.get('/forum/question', forum.question);
 app.get('/upload', upload.view);
 app.get('/library', library.viewReadings);
-app.get('/index/read',read.viewWords);
+app.get('/index/read', read.viewWords);
+app.get('/login', login.loginPage);
+app.get('/register', login.registeration);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
