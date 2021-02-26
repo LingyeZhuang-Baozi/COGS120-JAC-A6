@@ -51,6 +51,10 @@ app.get('/library', library.viewReadings);
 app.get('/index/read', read.viewWords);
 app.get('/login', login.loginPage);
 app.get('/register', login.registeration);
+app.get('/upload_url', upload.url);
+app.get('/upload_scan', upload.scan);
+app.get('/upload_file', upload.file);
+app.get('/upload_success', upload.success)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
