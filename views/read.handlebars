@@ -87,13 +87,24 @@ Participant observations help the researcher decide which questions are relevant
 			console.log("debug! DOWN");
 			selected_text = "";
 		})
-		$("p").mouseup (function () {
+		/*$("p").mouseup (function () {
 			console.log("debug! UP");
 			selected_text = window.getSelection();
 			console.log(selected_text.toString());
 			var range = selected_text.getRangeAt(0);
 			var highlighter = document.createElement("mark");
 			range.surroundContents(highlighter);
+		}) // old version. see better new version ↓ */
+		$("p").mouseup (function () {
+			console.log("debug! UP");
+			selected_text = window.getSelection();
+			console.log(selected_text.toString());
+			var range = selected_text.getRangeAt(0);
+			var content = range.extractContents();
+			var highlighter = document.createElement("span");
+			highlighter.style.cssText = "background-color:yellow;";
+			highlighter.appendChild(content);
+			range.insertNode(highlighter);
 		})
 	</script>
 </body>
