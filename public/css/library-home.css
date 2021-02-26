@@ -71,23 +71,77 @@
   float: left;
 }
 .highlight-ops{
+	margin: 0 0 0 300px;
 	width:123px;
-	height:30px;
-	margin-left: 145px;
-	margin-top: 26px;
+	height:123px;
+	border: none;
+  	color: black;
+  	padding: 15px 32px;
+  	text-align: center;
+ 	text-decoration: none;
+ 	display: inline-block;
+  	font-size: 16px;
+  	cursor: pointer;
+  	border-radius: 50%;
 }
+.hlButton1{background-color: #FAFC43;} /* yellow */
+.hlButton2 {background-color: #B3E9FA;} /* Blue */
+.hlbutton3 {background-color: #A2FBA4} /*green */
+
 .forum-icon{
-	width:43px;
-	height: 45px;
-	margin-left: 330px;
-	margin-top: 23px;
+	margin: 23px 50px 0 330px;
+	top:0;
+	height:50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	min-width: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	font-family: lato;
+	font-size: 25px;
+	color: #000000;
+	text-decoration: none;
+}
+.highlight-icon{
+	margin: 23px 50px 0 330px;
+	top:0;
+	height:50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	min-width: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	font-family: lato;
+	font-size: 10px;
+	color: black;
+	text-decoration: none;
 }
 .word-content{
 	margin: 32px 15px;
 	font-size: 25px;
 	line-height: 30px;
 }
-
+/*
+* this is wat turns the selected text yellow
+*/
+::selection{ 
+	background-color: yellow;
+  	color: black;
+}
+.markBlue{
+	background-color: lightblue;
+	color:black;
+}
+.markRed{
+	background-color: pink;
+	color: black;
+}
 /*.column{
 	float: left;
 	width: 50%;
