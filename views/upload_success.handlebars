@@ -24,32 +24,8 @@
 			<h2>Upload Reading</h2>
 		</div>
 		<div class="upload_box">
-			<div class = "upload_dropdown">
-				<button class="upload_method">Upload Method</button>
-				<div id = "upload_drop" class = "dropdown_options">
-					<a href="/upload_url">URL</a>
-					<a href="/upload_scan">Scan</a>
-					<a href="/upload_file">Upload File</a>
-				</div>
-			</div>
-
-			<script>
-				let click = document.querySelector('.upload_method');
-				let list =  document.querySelector('.dropdown_options')
-				click.addEventListener("click",()=>{
-					list.classList.toggle('newdropdown_options')
-				})
-			</script>
-
-			<div>
-				<select class = "class-options">
-					{{#each classname}}
-			        <option value = "class_name">{{class}}</option>
-			        {{/each}}
-		      	</select>
-			</div>		
-
-			<div><button onclick="window.location.href='/upload_success'" class="upload_button">Upload</button></div>
+			<p class = "success_message">Upload is successful and has been put in your class folder.</p>
+			<button onclick="window.location.href='/upload'" class="reload_button">Upload Another Reading</button>
 		</div>
 	</div>
 	
