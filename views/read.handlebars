@@ -2,16 +2,25 @@
 <head>
 	<title>ReadLibrary</title>
 	<meta charset="utf-8">
+
+	<!-- 3. Set viewport to match device width -->
 	<meta name="viewpoint" content="width=device-width, intitial-scale=1.0">
+
+	<!-- jQuery and javascripts -->
+	<script src="../js/jquery-1.11.0.js"></script>
 	<script src="../js/bootstrap.js"></script>
-	<!--<link href="bootstrap.min.css" rel="stylesheet">
+
+	<!-- Import CSS style -->
+	<!-- <link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/bootstrap.css" rel="stylesheet">
-	<link href="../css/bootstrap-theme.css" rel="stylesheet">-->
+	<link href="../css/bootstrap-theme.css" rel="stylesheet"> -->
 	<link href="../css/forum.css" rel="stylesheet">
 	<link href="../css/library-home.css" rel="stylesheet">
+
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 	
 </head>
+
 <body style="margin:0;">
 	<div>
 	<div class="fixed_header">
@@ -29,8 +38,6 @@
 		<a href="select" style= "display:inline-block" class ="highlighter-ops highlighter-ops--active">
 			<span style= "color: green"class="material-icons">lens</span>
 		</a>-->
-
-
 	</div>
 	<div style= "position: fixed; top: 0; right:0;">
 		<a href="/forum/question" class = "forum-icon forum-icon--active">
@@ -42,11 +49,6 @@
 	</div>
 
 	<div style="position:fixed; top:0;">
-		<script>
-			function goBack() {
-  				window.history.back();
-			}
-		</script>
 		<button onclick="goBack()" class="back-button"><</button>
 	</div>
 	<div class="word-content" style="margin-top:100px">
@@ -69,7 +71,30 @@ Participant observers integrate themselves into the environment and are often co
 Participant observations help the researcher decide which questions are relevant, what language to use, and what the culture is like. By being a part of the group, Jill can get a better feel of what is important to the research participants. She can also pick up on the language that they use and what certain words mean. If Jill decided to conduct research interviews later, she could use her background knowledge of the participants to help her create research questions.</p>
 	</div>
 	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://code.jquery.com/jquery.js"></script>
+	<script>
+		$(document).ready(function() {
+			initializePage();
+		})
+		function initializePage(){
+			console.log("initialize page");
+			// selectedText();
+		}
+		function goBack() {
+  			window.history.back();
+		}
+		var selected_text;
+		$("p").mousedown (function () {
+			console.log("debug! DOWN");
+			selected_text = "";
+		})
+		$("p").mouseup (function () {
+			console.log("debug! UP");
+			selected_text = window.getSelection();
+			console.log(selected_text.toString());
+			var range = selected_text.getRangeAt(0);
+			var highlighter = document.createElement("mark");
+			range.surroundContents(highlighter);
+		})
+	</script>
 </body>
 </html>
