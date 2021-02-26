@@ -28,20 +28,15 @@
 			<span style= "position: fixed;"class="material-icons">edit</span>
 			<span class="highlight-icon_text"></span>
 		</a>
-		<button style= "position: fixed; top: 0; margin: 23px 50px 0 70%" class ="highlighter-ops hlButton1">yellow</button>
+	</div>
+	<div style = "position:fixed; top: 23; right:250">
+		<button class=" hlButton1"></button>
+		<button class =" hlButton2"></button>
+		<button class ="hlButton3"></button>
 
-		<!--I was trying out a different way-->
-		<!--<button onclick="selectedText()" style= "position: fixed; top: 0;  margin: 23px 50px 0 70%px; display:inline-block" class ="highlighter-ops hlButton2">blue</button>-->
-		<!--<a href= "select" style= "display:inline-block" class ="highlighter-ops highlighter-ops--active">
-			<span style= "color: lightblue"class="material-icons">lens</span>
-		</a>
-		<a href="select" style= "display:inline-block" class ="highlighter-ops highlighter-ops--active">
-			<span style= "color: green"class="material-icons">lens</span>
-		</a>-->
 	</div>
 	<div style= "position: fixed; top: 0; right:0;">
 		<a href="/forum/question" class = "forum-icon forum-icon--active">
-		 <!--<button onclick="window.location.href='/forum'" class="material-icons">forum</button>-->
 			<span class="material-icons">forum</span>		 
 			<span class="forum-icon_text">Forum</span>
 		</a>
@@ -95,7 +90,7 @@ Participant observations help the researcher decide which questions are relevant
 			var highlighter = document.createElement("mark");
 			range.surroundContents(highlighter);
 		}) // old version. see better new version ↓ */
-		$("p").mouseup (function () {
+		$("p").mouseup (function() {
 			console.log("debug! UP");
 			selected_text = window.getSelection();
 			console.log(selected_text.toString());

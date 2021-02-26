@@ -71,25 +71,45 @@
   float: left;
 }
 .highlight-ops{
-	margin: 0 0 0 300px;
-	width:123px;
-	height:123px;
+	position: fixed;
+	margin: 0px 0px 0 50px;
+	width: 25%;
+	height:25%;
 	border: none;
-  	color: black;
-  	padding: 15px 32px;
-  	text-align: center;
- 	text-decoration: none;
- 	display: inline-block;
-  	font-size: 16px;
+	color: white;
+	padding: 15px;
+	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	/*margin: 4px 2px;*/
   	cursor: pointer;
-  	border-radius: 50%;
+  	border-radius:50%;
 }
-.hlButton1{background-color: #FAFC43;} /* yellow */
-.hlButton2 {background-color: #B3E9FA;} /* Blue */
-.hlbutton3 {background-color: #A2FBA4} /*green */
+.hlButton1{
+	background-color: #FAFC43;
+	width:50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+
+	} /* yellow */
+.hlButton2 {
+	background-color: #B3E9FA;
+	width:50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+
+	} /* Blue */
+.hlbutton3 {
+	background-color: #A2FBA4;
+	width:50px;
+	height: 50px;
+	border-radius: 50%
+	} /*green */
 
 .forum-icon{
-	margin: 23px 50px 0 330px;
+	margin: 23px 100px 0 330px;
 	top:0;
 	height:50px;
 	display: flex;
@@ -106,7 +126,7 @@
 	text-decoration: none;
 }
 .highlight-icon{
-	margin: 23px 50px 0 330px;
+	margin: 0px 50px 0 330px;
 	top:0;
 	height:50px;
 	display: flex;
@@ -126,13 +146,6 @@
 	margin: 32px 15px;
 	font-size: 25px;
 	line-height: 30px;
-}
-/*
-* this is wat turns the selected text yellow
-*/
-::selection{ 
-	background-color: yellow;
-  	color: black;
 }
 .markYellow{ 
 	background-color: yellow;
