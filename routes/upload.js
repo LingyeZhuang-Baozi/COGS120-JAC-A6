@@ -22,15 +22,3 @@ exports.file = function(req, res){
 exports.success = function(req, res){
   res.render('upload_success', class_data);
 };
-
-
-
-/*<div>
-				<select class = "class-options">
-			        <option value = "COGS120">COGS 120</option>
-			        <option value = "COGS100">COGS 100</option>
-			        <option value = "DSGN100">DSGN 100</option>
-			        <option value = "DSGN1">DSGN 1</option>
-			        <option value = "CSE87">COGS 87</option>
-		      </select>
-			</div>*/
